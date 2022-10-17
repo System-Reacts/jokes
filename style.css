@@ -1,0 +1,78 @@
+body {
+    height: 100vh;
+    background: #0e3e57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 500px;
+    height: 150px;
+    background: rgb(3, 178, 209);
+    border: 1px solid blue;
+    padding: 10px 40px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+
+button {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.791);
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    border: none;
+    color: rgb(0, 0, 0);
+    outline: none;
+}
+button:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover:after {
+    content: "😅";
+    text-align: start;
+    line-height: 40px;
+    font-size: 30px;
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+button:active {
+    top: 2px;
+}
+
+p {
+    font-family:cursive;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+main .text {
+    height: 70px;
+}
+main .emoji{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+main .emoji p{
+    font-size: 40px;
+}
